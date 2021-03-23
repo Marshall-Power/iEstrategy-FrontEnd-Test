@@ -546,7 +546,14 @@ nav li:hover {
 /* Section FAQS */
 
 .section-faqs {
-    height: 1000px;
+    max-height: 1075px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.section-faq-full {
+    max-height: 3000px;
+    overflow: auto;
 }
 
 .section-faqs h1 {
@@ -603,4 +610,33 @@ nav li:hover {
 .block-cross-rotated {
     transform: rotate(90deg);
     transition: transform 0.3s ease-out;
+}
+
+.faq-overlay {
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 98%);
+}
+
+.faq-overlay img {
+    margin-top: auto;
+}
+
+.faq-overlay span {
+    color: #C2A572;
+    text-transform: uppercase;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    margin: 20px 0 75px 0;
+    cursor: pointer;
+}
+
+.position-relative {
+    position: relative;
 }
