@@ -483,12 +483,14 @@ nav li:hover {
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 15px;
     background: #1B1B1B;
 }
 
 .section-cases article {
     margin-top: -280px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-cases article h1 {
@@ -502,8 +504,29 @@ nav li:hover {
     font-size: 44px;
 }
 
+.section-cases article .cases-img {
+    position: relative;
+}
+
 .section-cases article img {
     max-width: 100%;
+}
+
+.section-cases article .cases-img:after {
+    content:'\A';
+    position: absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.section-cases article .cases-img:hover:after {
+    opacity: 1;
 }
 
 .section-cases article p {
