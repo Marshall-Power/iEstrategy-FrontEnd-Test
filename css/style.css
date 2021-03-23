@@ -479,7 +479,7 @@ nav li:hover {
 /* Cases */
 
 .section-cases {
-    height: 700px;
+    height: 462px;
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -541,4 +541,66 @@ nav li:hover {
     color: #C2A572;
     text-transform: uppercase; 
     padding-left: 35px;
+}
+
+/* Section FAQS */
+
+.section-faqs {
+    height: 1000px;
+}
+
+.section-faqs h1 {
+    color: #1B1B1B;
+    font-size: 46px;
+    margin: 145px auto 109px auto;
+    width: fit-content;
+}
+
+.section-accordeon-question {
+    max-width: 1161px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #DBDBDB;
+    max-height: 78px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in;
+}
+
+.show-question {
+    max-height: 1000px;
+}
+
+.accordeon-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordeon-block h2 {
+    color: #1B1B1B;
+    font-family: 'PlayFair Display';
+    font-size: 22px;
+}
+
+.section-accordeon-question p {
+    font-size: 17px;
+    font-family: 'Lato';
+}
+
+.accordeon-block-cross {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    justify-content: center;
+}
+
+.block-cross-vertical {
+    transition: transform 0.3s ease-out;
+}
+
+.block-cross-rotated {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-out;
 }
