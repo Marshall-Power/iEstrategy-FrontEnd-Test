@@ -506,6 +506,7 @@ nav li:hover {
 
 .section-cases article .cases-img {
     position: relative;
+    width: fit-content;
 }
 
 .section-cases article img {
@@ -549,6 +550,7 @@ nav li:hover {
     max-height: 1075px;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+    position: relative;
 }
 
 .section-faq-full {
@@ -639,4 +641,15 @@ nav li:hover {
 
 .position-relative {
     position: relative;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Map Section */
+
+.section-map {
+    height: 465px;
+    background-color: #1B1B1B;
 }

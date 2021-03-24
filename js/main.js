@@ -16,12 +16,18 @@ showQuestions();
 function seeMore() {
     const faqSection = document.querySelector('.js-faq-section'),
           overlay = document.querySelector('.js-faq-overlay'),
-          btn = document.querySelector('.js-see-more');
+          btns = document.querySelectorAll('.js-see-button'),
+          btn_plus = document.querySelector('.js-see-more'),
+          btn_less = document.querySelector('.js-see-less');
 
-    btn.addEventListener('click', function(){
-        faqSection.classList.toggle('section-faq-full');
-        overlay.classList.toggle('position-relative');
-    });
+    btns.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            btn_plus.classList.toggle('display-none');
+            btn_less.classList.toggle('display-none');
+            faqSection.classList.toggle('section-faq-full');
+            overlay.classList.toggle('position-relative');
+        });
+    })
 }
 
 seeMore();
