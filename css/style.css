@@ -967,6 +967,26 @@ nav li:hover {
     padding-left: 0;
 }
 
+.city-banner-container {
+    display: flex;
+    margin-top: 56px;
+    position: relative;
+}
+
+.sky-gradient {
+    width: 100%;
+    position: absolute;
+    height: 46%;
+    top: -57px;
+    opacity: 1;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 3%, rgba(255,255,255,1) 50%);
+}
+
+.city-banner-container img {
+    width: 100%;
+}
+
 /* Footer */
 
 footer {
