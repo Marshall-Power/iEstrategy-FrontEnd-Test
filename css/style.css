@@ -651,5 +651,123 @@ nav li:hover {
 
 .section-map {
     height: 465px;
-    background-color: #1B1B1B;
+    background-color: #272727;
+    background-image: url('../img/bg-map.png');
+    background-size: 106%;
+    background-repeat: no-repeat;
+    background-position: 318% 21%;
+    display: flex;
+    flex-direction: column;
 }
+
+.section-map h1 {
+    font-size: 31px;
+    color: #C2A572;
+    font-family: 'PlayfairDisplay-Regular';
+    max-width: 422px;
+    text-align: left;
+    margin: 110px 0 49px 213px;
+}
+
+.section-map q {
+    color: #EFEFEF;
+    font-size: 17px;
+    font-family: 'Lato';
+    font-weight: lighter;
+    max-width: 459px;
+    margin: 0 0 25px 213px;
+}
+
+/* Opinion Section */
+
+.section-opinions h1 {
+    color: #1B1B1B;
+    font-family: 'Playfair Display';
+    font-size: 46px;
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-opinions h4 {
+    color: #C2A572;
+    font-family: 'Lato';
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 11px 0 89px 0;
+}
+
+.section-opinions .slideshow-container {
+    max-width: 1178px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.quote-slide {
+    display: none;
+}
+
+.quote {
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-style: italic;
+    min-height: 93px;
+    margin-top: 0;
+    margin-bottom: 38px;
+    /* background-image: url(../img/quotation-marks.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+    display: flex;
+    align-items: center;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 93px;  
+    opacity: .5; 
+    z-index: -1;
+    background: url(../img/quotation-marks.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+.author {
+    font-size: 22px;
+    font-family: 'PLayFair Display';
+    margin-bottom: 0;
+}
+
+.city {
+    font-size: 16px;
+    font-family: 'Lato';
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #C2A572;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #000000;
+  }
