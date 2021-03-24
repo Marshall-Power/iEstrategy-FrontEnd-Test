@@ -1,6 +1,96 @@
 /* Font Styles */
 
 @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+        url('../fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Playfair Display';
     src: url('../fonts/PlayfairDisplay-SemiBoldItalic') format('woff2'),
         url('../fonts/PlayfairDisplay-SemiBoldItalic.woff') format('woff');
@@ -716,10 +806,6 @@ nav li:hover {
     min-height: 93px;
     margin-top: 0;
     margin-bottom: 38px;
-    /* background-image: url(../img/quotation-marks.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; */
     display: flex;
     align-items: center;
 }
@@ -770,4 +856,172 @@ nav li:hover {
 
 .active, .dot:hover {
     background-color: #000000;
-  }
+}
+
+/* Contact Section */
+
+.section-contact {
+    margin-top: 157px;
+}
+
+.section-contact h1{
+    font-size: 46px; 
+    font-family: 'PlayFair Display';
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-data {
+    width: 100%;
+    max-width: 359px;
+    margin-right: 134px;
+    padding-top: 29px;
+}
+
+.contact-data p {
+    font-family: 'Lato';
+    font-size: 17px;
+    margin: 0;
+}
+
+.contact-genstate-logo {
+    margin: 62px 0 39px 0;
+    filter: invert(1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 179px;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+.mail {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact-form {
+    max-width: 593px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    font-family: 'PlayFair Display';
+    font-weight: bold;
+    gap: 16px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    padding-bottom: 9px;
+}
+
+.input-container input {
+    border: 1px solid #939393;
+    padding: 16px 0 16px 13px
+}
+
+.comment-container {
+    grid-row: span 2;
+}
+
+.comment-container input {
+    height: 100%;
+}
+
+.checkbox-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-container label {
+    padding-bottom: 0; 
+    font-weight: normal;
+}
+
+.submit-container {
+    background: #C2A572;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'OpenSans,AdobeInvisFont,MyriadPro-Regular';
+}
+
+.submit-container input {
+    padding-left: 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1B1B1B;
+}
+
+.footer-genstate-logo {
+    margin: 81px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.social-logos li:not(:last-of-type) {
+    margin-right: 29px;
+}
+
+.nav-links {
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    margin-top: 72px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    padding: 0 5px;
+}
+
+.nav-links li:not(:last-of-type) {
+    border-right: 1px solid #535253;
+}
+
+.legal-links {
+    color: #AAAAAA;
+    font-family: 'Lato';
+    display: flex;
+    margin-top: 72px;
+    justify-content: center;
+    padding-bottom: 208px;
+    opacity: 0.5;
+}
+
+.legal-links li {
+    padding: 0 5px;
+}
+
+.legal-links li:not(:last-of-type) {
+    border-right: 1px solid #535253;
+}
